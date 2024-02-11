@@ -1,0 +1,36 @@
+//
+//  main.c
+//  hw2
+//
+//  Created by Геннадий Матвиенко on 11.02.2024.
+//
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main(int argc, const char * argv[]) {
+    // первое включает сразу два задания
+    setlocale(LC_CTYPE,"Russian");
+    int a,b,c,sum,product,number;
+    printf("Введите три целых числа:\n ");
+    scanf("%d%d%d",&a,&b,&c);
+    sum = a + b + c;
+    product = a * b * c;
+    printf("%d + %d + %d = %d\n",a,b,c,sum);
+    printf("%d * %d * %d = %d\n",a,b,c,product);
+    printf("_\n");
+    //№ 3
+    printf("Введите два числа:\n ");
+    scanf("%d%d",&a,&b);
+    number = a - b;
+    printf("%d\n",number);
+    printf("_\n");
+    //№4 не могу разобраться
+    int N ;
+    scanf("%d",&N);
+    double summa;
+    summa = N / 1000 + N / 100%10 + N%100 / 10 + N%10;
+    printf ("summa = %.2f", summa);
+
+    return 0;
+}
